@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal App</title>
+    <link rel="stylesheet" href="../../output.css" />
+  </head>
+  <body class="w-full font-poppins bg-white text-dark">
+    <div id="nav"></div>
+    <div class="w-2/3 mx-auto pt-36 pb-20 max-sm:w-3/4">
+      <nav class="flex mb-10" aria-label="Breadcrumb">
+        <ol
+          class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse"
+        >
+          <li class="inline-flex items-center">
+            <a
+              href="category.html"
+              class="inline-flex items-center text-dark hover:text-red dark:text-darkGray dark:hover:text-white"
+            >
+              <svg
+                class="w-3 h-3 me-2.5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"
+                />
+              </svg>
+              Home
+            </a>
+          </li>
+          <li>
+            <div class="flex items-center">
+              <svg
+                class="rtl:rotate-180 w-3 h-3 text-darkGray mx-1"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 9 4-4-4-4"
+                />
+              </svg>
+              <a
+                href="category.html"
+                class="ms-1 text-gray-700 hover:text-red md:ms-2 dark:text-darkGray dark:hover:text-white"
+                >Foods</a
+              >
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center">
+              <svg
+                class="rtl:rotate-180 w-3 h-3 text-darkGray mx-1"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 9 4-4-4-4"
+                />
+              </svg>
+              <a
+                href="#"
+                class="ms-1 text-gray-700 hover:text-red md:ms-2 dark:text-darkGray dark:hover:text-white"
+                id="bc-lvl-3"
+              ></a>
+            </div>
+          </li>
+          <li aria-current="page">
+            <div class="flex items-center">
+              <svg
+                class="rtl:rotate-180 w-3 h-3 text-darkGray mx-1"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 9 4-4-4-4"
+                />
+              </svg>
+              <span class="ms-1 text-darkGray md:ms-2" id="bc-lvl-4"></span>
+            </div>
+          </li>
+        </ol>
+      </nav>
+      <h2 class="text-5xl mb-8" id="meal-name"></h2>
+      <hr class="text-gray mb-12" />
+      <p class="text-red font-semibold mb-3" id="meal-area"></p>
+      <div
+        class="flex gap-x-10 mb-16 max-sm:mb-12 max-sm:flex-wrap max-sm:gap-y-10"
+      >
+        <img
+          src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_4:3/k%2FPhoto%2FRecipes%2F2024-06-grilled-steak%2Fgrilled-steak-0109"
+          alt=""
+          class="w-3/5 object-cover rounded-2xl max-sm:w-full"
+          id="meal-thumb"
+        />
+        <div>
+          <h3 class="text-4xl mb-4">Recipes</h3>
+          <ul class="list-disc px-5" id="meal-ingredient-list"></ul>
+        </div>
+      </div>
+      <h3 class="text-4xl mb-4">Instructions</h3>
+      <p class="mb-16 text-justify" id="meal-instruction"></p>
+      <h3 class="text-4xl mb-4">Tutorials</h3>
+      <iframe
+        id="meal-tutorial"
+        class="w-full lg:h-128 max-sm:h-72 rounded-lg"
+        src="https://www.youtube.com/embed/gVm3gbkBS_I?si=uZJT8z6NHe5PUpPO"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="no-referrer"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"
+    integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="../../services/load_navbar.js"></script>
+  <script src="../../services/show_detail_meal.js"></script>
+</html>
