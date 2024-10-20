@@ -25,6 +25,7 @@ axios
         )
         .text(category.strCategory);
 
+      $("#loading").text("");
       $categoryItem.append($categoryName);
 
       return $categoryItem;

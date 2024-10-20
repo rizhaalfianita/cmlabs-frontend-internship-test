@@ -10,13 +10,13 @@ $(document).ready(function () {
         mealsRes = res.data.meals[0];
         console.log(mealsRes);
 
-        var videoUrl = mealsRes.strYoutube; // Adjust according to your API structure
+        var videoUrl = mealsRes.strYoutube;
 
-        var videoId = videoUrl.split("v=")[1]; // Get the part after 'v='
+        var videoId = videoUrl.split("v=")[1];
         if (videoId) {
-          var ampersandPosition = videoId.indexOf("&"); // Find the position of '&' if present
+          var ampersandPosition = videoId.indexOf("&");
           if (ampersandPosition !== -1) {
-            videoId = videoId.substring(0, ampersandPosition); // Remove any additional parameters
+            videoId = videoId.substring(0, ampersandPosition);
           }
         }
 
@@ -45,6 +45,7 @@ $(document).ready(function () {
           )}`
         );
         $("#bc-lvl-4").text(mealsRes.strMeal);
+        $("#loading").text("");
         $("#meal-name").text(mealsRes.strMeal);
         $("#meal-area").text(`${mealsRes.strArea} Culinary`);
         $("#meal-thumb").attr("src", mealsRes.strMealThumb);

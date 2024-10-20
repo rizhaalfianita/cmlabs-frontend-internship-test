@@ -34,6 +34,7 @@ $(document).ready(function () {
           return $mealItem;
         });
 
+        $("#loading").text("");
         $categoryMealsGrid.append(mealItems);
       })
       .catch((err) => {
